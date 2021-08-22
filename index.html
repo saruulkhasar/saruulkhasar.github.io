@@ -1,0 +1,130 @@
+<!--
+HOME page structure:
+1) <head></head>
+   - favicon, title
+   - css, javascript bootstrap connections
+   - my style.css connection
+   - crimson pro font connection
+2) <body></body>
+   <div class="container-fluid">
+       i)   top-container     - title & navbar
+       ii)  middle-container  - img & intro
+       iii) bottom-container  - contact & copyright
+   </div>
+
+-->
+<html>
+
+<!-- Header starts here -->
+
+<head>
+  <link charset="utf-8">
+
+  <!-- Favicon and title-->
+  <link rel="icon" href="favicon.ico">
+  <title>Saruul</title>
+
+  <!-- Bootstrap stylesheets -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  <!-- Connect to my stylesheet style.css -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&display=swap" rel="stylesheet">
+
+</head>
+
+
+<!-- Body starts here -->
+
+<body>
+  <div class="container-fluid">
+    <!-- top container starts here -->
+    <div class="top-container">
+      <div class="title-container">
+        <h1>Saruul Khasar</h1>
+        Economist | Data Analyst
+      </div>
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav mr-auto">
+            <!-- Home bar -->
+            <li class="nav-item">
+              <a class="nav-link my_bar" href="index.html">HOME</a>
+            </li>
+            <!-- Dropdown menu bar -->
+            <li class="nav-item">
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle btn-light" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  PROJECTS
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="projects.html">List of all projects</a></li>
+                  <li><a class="dropdown-item" href="barnichon.html">Unemployment forecast</a></li>
+                  <li><a class="dropdown-item" href="income_tax.html">Income tax database</a></li>
+                </ul>
+              </div>
+            </li>
+            <!-- Book note bar -->
+            <li class="nav-item">
+              <a class="nav-link" href="books.html">BOOK NOTES</a>
+            </li>
+            <!-- Resume bar -->
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">RESUME</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <!-- middle container starts here -->
+    <div class="middle-container my-intro">
+      <div class="row">
+        <div class="col-lg-4 col-sm-6">
+          <img class="img-me" src="images/my_picture.jpeg" alt="Saruul Khasar">
+        </div>
+        <div class="col-lg-8 col-sm-6">
+          <p><br>Hi, I am Saruul.
+            <br> I am an economist, data enthusiast, and a Ph.D. dropout ✌🏼
+            <br> I created this web page to share some of data analysis and machine learning projects with step by step short explanations.
+            Also, this is my peronal space to share my thoughts on books I've picked up recently.
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- bottom container starts here -->
+    <div class="bottom-container" id="front-bottom-container">
+      <div class="row">
+        <div class="col-6 contact-info">
+          Contact info:
+          <br> phone: (206)-747-8565
+          <br> email: saruulkhasar@gmail.com
+        </div>
+        <div class="col-6">
+          <p class="copyright-container">
+            © 2021 Saruul Khasar.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Connect to jQuery and Javascript -->
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+  <script src="js/index.js" charset="utf-8"></script>
+
+</body>
+
+</html>

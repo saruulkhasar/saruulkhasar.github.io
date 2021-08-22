@@ -1,0 +1,195 @@
+<!--
+PROJECTS page structure:
+1) <head></head>
+   - favicon, title
+   - css, javascript bootstrap connections
+   - my style.css connection
+   - crimson pro font connection
+2) <body></body>
+   <div class="container-fluid">
+       i)   top-container     - title & navbar
+       ii)  middle-container  - different divs for each project
+       iii) bottom-container  - contact & copyright
+   </div>
+-->
+<html>
+
+<!-- Header starts here -->
+<head>
+  <link charset="utf-8">
+
+  <!-- Favicon and title-->
+  <link rel="icon" href="favicon.ico">
+  <title>Saruul</title>
+
+  <!-- Bootstrap stylesheets -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  <!-- Connect to my stylesheet style.css -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&display=swap" rel="stylesheet">
+
+</head>
+
+<!-- Body starts here -->
+<body>
+  <div class="container-fluid">
+    <!-- top container starts here -->
+    <div class="top-container">
+      <div class="title-container">
+        <h1>Saruul Khasar</h1>
+        Economist | Data Analyst
+      </div>
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav mr-auto">
+            <!-- Home bar -->
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">HOME</a>
+            </li>
+            <!-- Dropdown menu bar -->
+            <li class="nav-item">
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle btn-light" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  PROJECTS
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="projects.html">List of all projects</a></li>
+                  <li><a class="dropdown-item" href="barnichon.html">Unemployment forecast</a></li>
+                  <li><a class="dropdown-item" href="income_tax.html">Income tax database</a></li>
+                </ul>
+              </div>
+            </li>
+            <!-- Book note bar -->
+            <li class="nav-item">
+              <a class="nav-link" href="books.html">BOOK NOTES</a>
+            </li>
+            <!-- Resume bar -->
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">RESUME</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <!-- middle container starts here -->
+    <div class="middle-container">
+      <div class="row">
+        <!--project 6 box-->
+        <div class="col-lg-6 col-md-6 project-img-container">
+          <img class="img-project" src="images/projects/6.png" alt="Barnichon unemployment">
+        </div>
+        <div class="col-lg-6 col-md-6 project-text-container">
+          <h5>Forecasting US unemployment rate on Python</h5>
+          <p>In this project, I replicated one of the most well-known papers on
+            unemployment rate forecasts. The original model was run on STATA but I
+            have built the model on more high-level programming language Python.
+          </p>
+          <p style="text-align:right">
+            <a href="barnichon.html" class="btn btn-outline-secondary" role="button" aria-pressed="true">For more information</a>
+          </p>
+        </div>
+
+        <!--project 5 box-->
+        <div class="col-lg-6 col-md-6 project-img-container">
+          <img class="img-project" src="images/projects/5.png" alt="Income tax database">
+        </div>
+        <div class="col-lg-6 col-md-6 project-text-container">
+          <h5>Creating SQL database from scratch: Tax income database</h5>
+          <p>In this project, I migrated 20 years of State Income Tax data with each year
+            consisting 99 income range filers with 5 different filing statuses into
+            a relational database system built on PostgreSQL. First, I cleaned and standardized
+            raw Excel spreadsheets using Python; then, I designed the database and imported the
+            datasets using PostgreSQL.</p>
+          <p style="text-align:right">
+            <a href="p2_tax.html" class="btn btn-outline-secondary" role="button" aria-pressed="true">For more information</a>
+          </p>
+        </div>
+
+        <!--project 4 box-->
+        <div class="col-lg-6 col-md-6 project-img-container">
+          <img class="img-project" src="images/projects/4.png" alt="Forecasting sales tax">
+        </div>
+        <div class="col-lg-6 col-md-6 project-text-container">
+          <h5>Forecasting time series data with SARIMA model</h5>
+          <p> In this project, I built a prediction model for Sales Tax Revenue and
+            Tax Relief Fund revenue using SARIMA and simple regression models.
+          </p>
+          <p style="text-align:right">
+            <a href="p2_tax.html" class="btn btn-outline-secondary" role="button" aria-pressed="true">For more information</a>
+          </p>
+        </div>
+
+        <!--project 3 box-->
+        <div class="col-lg-6 col-md-6 project-img-container">
+          <img class="img-project" src="images/projects/3.png" alt="microsoft malware">
+        </div>
+        <div class="col-lg-6 col-md-6 project-text-container">
+          <h5>Microsoft Malware Project</h5>
+          <p>This is one of the tasks I worked on during my internship at NewPoint.io.
+            My team used publicly available datasets to create a relational database
+            system for Malware data and used CatBoost and Random Forest Models to
+            estimate the probability of a computer having malware. My team also
+            created this dashboard on PowerBI. </p>
+          <p style="text-align:right">
+            <a href="p2_tax.html" class="btn btn-outline-secondary" role="button" aria-pressed="true">For more information</a>
+          </p>
+        </div>
+
+        <!--project 2 box-->
+        <div class="col-lg-6 col-md-6 project-img-container">
+          <img class="img-project" src="images/projects/2.png" alt="social media database">
+        </div>
+        <div class="col-lg-6 col-md-6 project-text-container">
+          <h5>Designing a database: Social Media Marketing</h5>
+          <p>
+            This is a database I created in my Databases and Data Modeling class at
+            the University of Washington. In this project, I've built a relational
+            database for hypothetical social media datasets and wrote queries,
+            stored procedures, computed columns, business rules.
+          </p>
+          <p style="text-align:right">
+            <a href="p2_tax.html" class="btn btn-outline-secondary" role="button" aria-pressed="true">For more information</a>
+          </p>
+        </div>
+
+        <!--project 1 box-->
+        <div class="col-lg-6 col-md-6 project-img-container">
+          <img class="img-project" src="images/projects/1.png" alt="panel regression">
+        </div>
+        <div class="col-lg-6 col-md-6 project-text-container">
+          <h5>Panel regression analysis on macroeconomic data</h5>
+          <p>
+            I worked on macroprudential policy analysis at the Central Bank of Mongolia.
+            Outcomes from this research project was published as a paper at The South
+            East Asian Central Banks (SEACEN) Centre journal.
+
+            The research has two parts where we performed two types of analysis: panel regression
+            analysis and event study analysis.
+          </p>
+          <p style="text-align:right">
+            <a href="p2_tax.html" class="btn btn-outline-secondary" role="button" aria-pressed="true">For more information</a>
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Connect to Javascript file -->
+  <script src="js/index.js" charset="utf-8"></script>
+
+</body>
+
+</html>
