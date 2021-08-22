@@ -1,0 +1,308 @@
+<!--
+PROJECTS page structure:
+1) <head></head>
+   - favicon, title
+   - css, javascript bootstrap connections
+   - my style.css connection
+   - crimson pro font connection
+2) <body></body>
+   <div class="container-fluid">
+       i)   top-container     - title & navbar
+       ii)  middle-container  - different divs for each project
+       iii) bottom-container  - contact & copyright
+   </div>
+-->
+
+<html>
+
+<!-- Header starts here -->
+
+<head>
+  <link charset="utf-8">
+
+  <!-- Favicon and title-->
+  <link rel="icon" href="favicon.ico">
+  <title>Saruul</title>
+
+  <!-- Bootstrap stylesheets -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  <!-- Connect to my stylesheet style.css -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&display=swap" rel="stylesheet">
+
+</head>
+
+
+<!-- Body starts here -->
+
+<body>
+  <div class="container-fluid">
+    <!-- top container starts here -->
+    <div class="top-container">
+      <div class="title-container">
+        <h1>Saruul Khasar</h1>
+        Economist | Data Analyst
+      </div>
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav mr-auto">
+            <!-- Home bar -->
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">HOME</a>
+            </li>
+            <!-- Dropdown menu bar -->
+            <li class="nav-item">
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle btn-light" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  PROJECTS
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="projects.html">List of all projects</a></li>
+                  <li><a class="dropdown-item" href="barnichon.html">Unemployment forecast</a></li>
+                  <li><a class="dropdown-item" href="income_tax.html">Income tax database</a></li>
+                </ul>
+              </div>
+            </li>
+            <!-- Book note bar -->
+            <li class="nav-item">
+              <a class="nav-link" href="books.html">BOOK NOTES</a>
+            </li>
+            <!-- Resume bar -->
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">RESUME</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <!-- middle container starts here -->
+    <div class="middle-container">
+      <!-- <div class="row"> -->
+
+      <!-- Project overview container -->
+      <div class="col-lg-12 page-intro-container">
+        <h5>Overview:</h5>
+        <p> The unemployment rate is undeniably one of the most important health indicator of an economy.
+          To develop a prediction model for the State I am currently working with, I did some research
+          to identify the best method out there. There are three common approaches to tackle this problem.
+          The first is regression type approach that uses historical time-series of unemployment rate.
+          The second approach is based on the Okun's law of output and unemployment rate.
+          The third is labor force flow approach.
+          <br>
+          <br> This last method was introduced by two economists from the Federal Reserve Bank:
+          <a href="https://www.brookings.edu/bpea-articles/the-ins-and-outs-of-forecasting-unemployment-using-labor-force-flows-to-forecast-the-labor-market/">Barnichon and Nekarda (2012).</a>
+          According to the paper, this method shows an outstanding result in the short and medium term forecasts. Therefore, I have decided to
+          replicate this paper by writing the codes from scratch on Python with a goal to develop similar type of model
+          for the State.
+          <a href="https://drive.google.com/drive/u/1/folders/1ZG5Laneae-O1Wx6FYhQBGkKBgnK3qTV9"> Click here </a> to the project files.
+          <br>
+        </p>
+
+        <h5>Tools & Models used in this project:</h5>
+
+        <ul>
+          <li>Python</li>
+          <li>Vector Autoregressive Model (VAR)</li>
+        </ul>
+
+      </div>
+
+      <!-- All steps start here: this large div helps create horizontal line-->
+      <div class="project-steps vertical-line">
+        <div class="row">
+          <!--Step 1 container-->
+          <div class="col-lg-6 col-md-6 project-text-container">
+            <h5>Step 1: Import relevant Python packages</h5>
+            <p>
+              In addition to the regular data analysis and statistics packages, this project uses VAR package from statsmodels.
+            </p>
+          </div>
+          <div class="col-lg-6 col-md-6 img-project-step">
+            <img class="img-project" src="images/barnichon/1.png" alt="barnichon unemployment">
+          </div>
+
+          <!-- Step 2 container -->
+          <div class="col-lg-6 col-md-6 project-text-container">
+            <h5>Step 2: Outline project steps</h5>
+            <p>
+              Next up, I created high-level outline of the project.
+            </p>
+          </div>
+          <div class="col-lg-6 col-md-6 img-project-step">
+            <img class="img-project" src="images/barnichon/2.png" alt="barnichon unemployment">
+          </div>
+
+          <!-- Step 3 container -->
+          <div class="col-lg-6 col-md-6 project-text-container">
+            <h5>Step 3: Understand the theoretical model</h5>
+            <p>
+              Labor Force Flow model is built on two elements: the law of motion and hazard rate forecast.
+              The law of motion describes how unemployment rate converges to its steady-state, and this equation
+              gives us one step ahead forecast for unemployment rate given the next period hazard rates.
+              Hazard rate f_t is unemployment outflow rate, and s_t is inflow rate at a given time.
+            </p>
+          </div>
+          <div class="col-lg-6 col-md-6 img-project-step">
+            <img class="img-project" src="images/barnichon/3.png" alt="barnichon unemployment">
+          </div>
+
+          <!-- Step 4 container -->
+          <div class="col-lg-6 col-md-6 project-text-container">
+            <h5>Step 4: Import datasets</h5>
+            <p>
+              Datasets were publicly available on Regis Barnichon personal website.
+              I transformed the datasets from Stata format to a single .csv file and imported as a DataFrame into Python.
+            </p>
+          </div>
+          <div class="col-lg-6 col-md-6 img-project-step">
+            <img class="img-project" src="images/barnichon/4.png" alt="barnichon unemployment">
+          </div>
+
+          <!-- Step 5 container -->
+          <div class="col-lg-6 col-md-6 project-text-container">
+            <h5>Step 5: Estimate the hazard rates</h5>
+            <p>
+              The unemployment outflow probabiliy is determined by 1 minus the ratio of people being still unemployed
+              in the next period (subtracting those who recently got unemployed, U_s) and current period unemployment rate.
+              The unemployment outflow rate (f) and inflow rate (s) is calculated using (2) and (3). Using the past series
+              series on number of people being unemployed, employed, and unemployed for less than 5 weeks, I created a series
+              for historical hazard rates.
+            </p>
+          </div>
+          <div class="col-lg-6 col-md-6 img-project-step">
+            <img class="img-project" src="images/barnichon/5.png"" alt=" barnichon unemployment">
+          </div>
+
+          <!-- Step 6 container -->
+          <div class="col-lg-6 col-md-6 project-text-container">
+            <h5>Step 6: Visualize the data to get the feel</h5>
+            <p>
+              In this step, I visualized all of the series to get a sense of how each series look like.
+            </p>
+          </div>
+          <div class="col-lg-6 col-md-6 img-project-step">
+            <img class="img-project" src="images/barnichon/6.png" alt="barnichon unemployment">
+          </div>
+
+          <!-- Step 7 container -->
+          <div class="col-lg-6 col-md-6 project-text-container">
+            <h5>Step 7: Transform each series according to the paper</h5>
+            <p>
+              Transformed each series according to the paper.
+            </p>
+          </div>
+          <div class="col-lg-6 col-md-6 img-project-step">
+            <img class="img-project" src="images/barnichon/7.png" alt="barnichon unemployment">
+          </div>
+
+          <!-- Step 8 container -->
+          <div class="col-lg-6 col-md-6 project-text-container">
+            <h5>Step 8: Granger causality test</h5>
+            <p>
+              In the Vector Autoregression (VAR) model, each variable is modeled as a linear combination of past values of itself and the past values of other variables in the system. VAR(p) model is a seemingly unrelated regression (SUR). SUR is a
+              set of equations that has contemporaneous cross-equation error correlation. At first look, the equations seem unrelated but the equations are related through the correlation in the errors.
+              1. Granger-causality test : First criteria to use VAR for forecasting is that the system of equation has to be SUR.
+            </p>
+          </div>
+          <div class="col-lg-6 col-md-6 img-project-step">
+            <img class="img-project" src="images/barnichon/8.png" alt="barnichon unemployment">
+          </div>
+
+          <!-- Step 9 container -->
+          <div class="col-lg-6 col-md-6 project-text-container">
+            <h5>Step 9: Granger causality test result</h5>
+            <p>
+              Labor Force Flows model is built on two elements: a law of motion describing how the unemployment rate converges to its steady-state value (2), and a forecast of the labor force flows (3) using VAR model.
+            </p>
+          </div>
+          <div class="col-lg-6 col-md-6 img-project-step">
+            <img class="img-project" src="images/barnichon/9.png" alt="barnichon unemployment">
+          </div>
+
+          <!-- Step 10 container -->
+          <div class="col-lg-6 col-md-6 project-text-container">
+            <h5>Step 10: Training VAR: select order p</h5>
+            <p>
+              Labor Force Flows model is built on two elements: a law of motion describing how the unemployment rate converges to its steady-state value (2), and a forecast of the labor force flows (3) using VAR model.
+            </p>
+          </div>
+          <div class="col-lg-6 col-md-6 img-project-step">
+            <img class="img-project" src="images/barnichon/10.png" alt="barnichon unemployment">
+          </div>
+
+          <!-- Step 11 container -->
+          <div class="col-lg-6 col-md-6 project-text-container">
+            <h5>Step 11: Training VAR: train and forecast</h5>
+            <p>
+              Labor Force Flows model is built on two elements: a law of motion describing how the unemployment rate converges to its steady-state value (2), and a forecast of the labor force flows (3) using VAR model.
+            </p>
+          </div>
+          <div class="col-lg-6 col-md-6 img-project-step">
+            <img class="img-project" src="images/barnichon/11.png" alt="barnichon unemployment">
+          </div>
+
+          <!-- Step 12 container -->
+          <div class="col-lg-6 col-md-6 project-text-container">
+            <h5>Step 12: Training VAR: plotting</h5>
+            <p>
+              Labor Force Flows model is built on two elements: a law of motion describing how the unemployment rate converges to its steady-state value (2), and a forecast of the labor force flows (3) using VAR model.
+            </p>
+          </div>
+          <div class="col-lg-6 col-md-6 img-project-step">
+            <img class="img-project" src="images/barnichon/12.png" alt="barnichon unemployment">
+          </div>
+
+          <!-- Step 13 container -->
+          <div class="col-lg-6 col-md-6 project-text-container">
+            <h5>Step 13: Unemployment flow equation</h5>
+            <p>
+              Labor Force Flows model is built on two elements: a law of motion describing how the unemployment rate converges to its steady-state value (2), and a forecast of the labor force flows (3) using VAR model.
+            </p>
+          </div>
+          <div class="col-lg-6 col-md-6 img-project-step">
+            <img class="img-project" src="images/barnichon/13.png" alt="barnichon unemployment">
+          </div>
+
+          <!-- Step 14 container -->
+          <div class="col-lg-6 col-md-6 project-text-container">
+            <h5>Step 14: Unemployment forecast plot</h5>
+            <p>
+              Labor Force Flows model is built on two elements: a law of motion describing how the unemployment rate converges to its steady-state value (2), and a forecast of the labor force flows (3) using VAR model.
+            </p>
+          </div>
+          <div class="col-lg-6 col-md-6 img-project-step">
+            <img class="img-project" src="images/barnichon/14.png" alt="barnichon unemployment">
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Final notes container -->
+      <div class="col-lg-12 final-note-container">
+        <h5>Final note:</h5>
+        <p> Things to be cautious about:
+          <br>
+          <br>
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Connect to Javascript file -->
+  <script src="js/index.js" charset="utf-8"></script>
+</body>
+
+</html>

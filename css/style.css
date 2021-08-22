@@ -1,0 +1,111 @@
+/************** TAG SELECTORS **************/
+
+body {
+  background-color: #fafafa;
+  font-family: serif;
+  font-family: 'Crimson Pro', sans-serif;
+  color: #474747;
+  margin: 5% 12%;
+}
+
+h1 {
+  font-size: 300%;
+}
+
+h5, h6 {
+  font-weight: bold;
+}
+
+p {
+  text-align: justify;
+  font-size: 18px;
+}
+
+div {
+    display: block;  /* div is styled as blocks w/ white space on top and bottom */
+}
+ul {
+  list-style-type: square;
+}
+
+/******************* MAJOR CONTAINERS ******************/
+
+.title-container {
+  text-align: center;
+}
+.middle-container {
+  padding-top: 5%;
+}
+.bottom-container {
+  padding-top: 15%;
+}
+
+
+/******************* OTHER CONTAINERS ******************/
+.copyright-container {
+  position: relative;
+  text-align: right;
+}
+.project-img-container {
+  padding: 0 2% 5%;
+}
+.page-intro-container {
+  padding: 0 3% 3%;
+}
+.final-note-container {
+  padding-top: 5%;
+}
+.vertical-line {
+  margin-left: 5%;
+  border-left: 5px solid #e5a3a3;  /* This adds long vertical line on the left*/
+  max-width: 90%;
+}
+.project-text-container, .book-img-container {    /* setting distance from the vertical pink line */
+  padding-left: 5%;
+  padding-right: 3%;
+}
+.book-review {
+  padding-bottom: 7%;
+}
+/******************* CONTENTS ******************/
+.my-intro {
+  padding-top: 10%;
+}
+
+
+
+/******************* IMAGES ******************/
+
+.img-me {
+  width: 50%;
+  opacity: 0.5;
+  border-radius: 50%;
+  margin-left: 40%;
+}
+.img-project {
+  max-width: inherit;
+  max-height: inherit;
+  display: flex;
+}
+.img-project-step {
+  padding-bottom: 10%;
+}
+.img-books{
+  width: 100%;
+}
+
+/******************* NAVs ******************/
+
+.navbar-collapse {
+  padding-top: 3%;
+}
+.navbar-nav > li{
+  /* padding-left: 5%; */
+  padding-right: 30px;
+}
+
+
+.turn-red {
+  color: #8b0000;
+  font-weight: bold;
+}
