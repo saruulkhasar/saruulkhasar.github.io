@@ -67,6 +67,9 @@ ul {
 .book-review {
   padding-bottom: 7%;
 }
+.top-menu-container {
+  align-content: center;
+}
 /******************* CONTENTS ******************/
 .my-intro {
   padding-top: 10%;
@@ -91,10 +94,7 @@ ul {
 .img-books {
   width: 100%;
 }
-/* .resume {
-  align-items: center;
-  text-align: center;
-} */
+
 /******************* NAVs ******************/
 
 .navbar-collapse {
