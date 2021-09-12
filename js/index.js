@@ -7,25 +7,25 @@ $(document).ready(function(){
 
 //////////////  books page  /////////////
 $(document).ready(function(){
-  $.get('ichiro-kishimi.html').done(function(data){
+  $.get('books/ichiro-kishimi.html').done(function(data){
     $('.ichiro-kishimi').html(data)
   })
 })
 
 $(document).ready(function(){
-  $.get('john-bogle.html').done(function(data){
+  $.get('books/john-bogle.html').done(function(data){
     $('.john-bogle').html(data)
   })
 })
 
 $(document).ready(function(){
-  $.get('phil-knight.html').done(function(data){
+  $.get('books/phil-knight.html').done(function(data){
     $('.phil-knight').html(data)
   })
 })
 
 $(document).ready(function(){
-  $.get('benjamin-graham.html').done(function(data){
+  $.get('books/benjamin-graham.html').done(function(data){
     $('.benjamin-graham').html(data)
   })
 })
