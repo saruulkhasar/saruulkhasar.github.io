@@ -66,10 +66,8 @@ ul {
 .book-review {
   padding-bottom: 7%;
 }
-.menu-container {
-  align-content: center;
-  align-items: center;
-  align-self: center;
+.resume-container {
+  display: inline-block;
 }
 
 /******************* CONTENTS ******************/
@@ -99,8 +97,6 @@ ul {
 .menu-container {
   text-align: center;
   display: inline-block;
-}
-
 }
 /******************* NAVs ******************/
 
