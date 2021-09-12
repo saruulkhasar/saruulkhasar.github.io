@@ -72,6 +72,11 @@ ul {
   align-items: center;
   align-self: center;
 }
+.resume-container {
+  align-content: center;
+  align-items: center;
+  align-self: center;
+}
 /******************* CONTENTS ******************/
 .my-intro {
   padding-top: 10%;
