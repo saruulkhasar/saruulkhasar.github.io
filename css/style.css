@@ -72,8 +72,6 @@ ul {
   padding-top: 10%;
 }
 
-
-
 /******************* IMAGES ******************/
 
 .img-me {
@@ -90,10 +88,12 @@ ul {
 .img-project-step {
   padding-bottom: 10%;
 }
-.img-books{
+.img-books {
   width: 100%;
 }
-
+.resume {
+  align-items: center;
+}
 /******************* NAVs ******************/
 
 .navbar-collapse {
@@ -103,8 +103,6 @@ ul {
   /* padding-left: 5%; */
   padding-right: 30px;
 }
-
-
 .turn-red {
   color: #8b0000;
   font-weight: bold;
