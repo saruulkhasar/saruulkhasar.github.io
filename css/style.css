@@ -69,6 +69,8 @@ ul {
 }
 .top-menu-container {
   align-content: center;
+  align-items: center;
+  align-self: center;
 }
 /******************* CONTENTS ******************/
 .my-intro {
