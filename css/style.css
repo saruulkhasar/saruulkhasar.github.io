@@ -41,9 +41,12 @@ iframe {
 }
 .middle-container {
   padding-top: 5%;
+  padding-left: 12%;
 }
 .bottom-container {
   padding-top: 15%;
+  padding-left: 12%;
+  padding-right: 12%;
 }
 
 
@@ -76,14 +79,14 @@ iframe {
 
 
 /******************* CONTENTS ******************/
-.my-intro {
+/* .my-intro {
   padding-top: 10%;
-}
+} */
 
 /******************* IMAGES ******************/
 
 .img-me {
-  width: 50%;
+  width: 55%;
   opacity: 0.5;
   border-radius: 50%;
   margin-left: 40%;
@@ -106,8 +109,8 @@ iframe {
 /******************* NAVs ******************/
 
 .navbar {
-  padding-top: 3%;
-  padding-left: 30%;
+  padding-top: 2%;
+  padding-left: 16%;
 }
 .navbar-nav > li{
   /* padding-left: 5%; */
