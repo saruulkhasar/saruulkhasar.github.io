@@ -96,7 +96,12 @@ ul {
 .img-books {
   width: 100%;
 }
+.menu-container {
+  text-align: center;
+  display: inline-block;
+}
 
+}
 /******************* NAVs ******************/
 
 .navbar-collapse {
@@ -104,11 +109,9 @@ ul {
 }
 .navbar-nav > li{
   /* padding-left: 5%; */
-  display: inline-block;
+  /* display: inline-block; */
   padding-right: 30px;
 }
-
-
 .turn-red {
   color: #8b0000;
   font-weight: bold;
