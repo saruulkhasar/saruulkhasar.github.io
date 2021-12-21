@@ -1,0 +1,146 @@
+<html>
+
+<head>
+  <link charset="utf-8">
+
+  <!-- Favicon and title-->
+  <link rel="icon" href="images/favicon.ico">
+  <title>Saruul</title>
+
+  <!-- Bootstrap stylesheets -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  <!-- Connect to my stylesheet style.css -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&display=swap" rel="stylesheet">
+
+  <!-- Import jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+
+
+<!-- Body starts here -->
+
+<body>
+  <div class="container-fluid">
+    <!-- top container starts here -->
+    <div class="top-container"></div>
+
+    <!-- middle container starts here -->
+    <div class="middle-container">
+      <!-- <div class="row"> -->
+
+      <!-- Project overview container -->
+      <div class="col-lg-12 page-intro-container">
+        <h5>Overview:</h5>
+        <p> Recently, I have read a couple of books on investment and stock markets which led me
+          to a conclusion that I need some comprehensive company analysis framework to
+          compare various companies and make a more informed decision on investment.
+          The Warren Buffett Way by Robert G. Hagstrom was a great starting point to dig deep
+          into companies that I was interested in. So I have decided to take over this project
+          to create a dashboard for some key performance indicators measured from companies'
+          financial statements. First, I've decided to build the dashboard for Top 6 general merchandisers
+          in the US ranked by Fortune. And later I can use this dashboard to compare other peer groups
+          such as Top 6 in information tech or healthcare.
+
+          <br>
+          <br>
+          <img class="col-lg-12 page-intro-container img-project" src="images/projects/dashboard.png" alt="Barnichon unemployment">
+          <br>
+        </p>
+
+        <h5>Tools and sources used in this project:</h5>
+
+        <ul>
+          <li>Jupyter notebook</li>
+          <li>Tableau</li>
+          <li>Yahoo Finance</li>
+          <li>Fortune 500</li>
+        </ul>
+
+      </div>
+
+      <!-- All steps start here: this large div helps create horizontal line-->
+      <div class="project-steps vertical-line">
+        <div class="row">
+          <!--Step 1 container-->
+          <div class="col-lg-6 col-md-6 project-text-container">
+            <h5>Step 1: Import financial statements data from Yahoo Finance</h5>
+            <p>
+              I downloaded each company's balance sheet, income statement, cash flow statement,
+              and company valuations spreadsheets and imported them into jupyter notebook.
+            </p>
+          </div>
+          <div class="col-lg-6 col-md-6 img-project-step">
+            <img class="img-project" src="images/dashboard/1.png">
+          </div>
+
+          <!-- Step 2 container -->
+          <div class="col-lg-6 col-md-6 project-text-container">
+            <h5>Step 2: Choose KPIs inspired</h5>
+            <p>
+              I chose 8 indicators to measure companies' profitability, sustainability, indebtedness,
+              and valuations (I'll explain the rationale later). <br>
+              1. Profit margin<br>
+              2. Owner earnings <br>
+              3. Short-term debt<br>
+              4. Current ratio<br>
+              5. Debt-to-equity<br>
+              6. Return-on-equity<br>
+              7. The one dollar premise<br>
+              8. PE ratio<br>
+
+            </p>
+          </div>
+          <div class="col-lg-6 col-md-6 img-project-step">
+            <img class="img-project" src="images/dashboard/2.png">
+          </div>
+
+          <!-- Step 3 container -->
+          <div class="col-lg-6 col-md-6 project-text-container">
+            <h5>Step 3: Export the KPIs in Excel</h5>
+            <p>
+              ...
+            </p>
+          </div>
+          <div class="col-lg-6 col-md-6 img-project-step">
+            <img class="img-project" src="images/dashboard/3.png">
+          </div>
+
+          <!-- Step 4 container -->
+          <div class="col-lg-6 col-md-6 project-text-container">
+            <h5>Step 4: Create a dashboard</h5>
+            <p>
+              ...
+            </p>
+          </div>
+          <div class="col-lg-6 col-md-6 img-project-step">
+            <img class="img-project" src="images/dashboard/4.png">
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Final notes container -->
+      <div class="col-lg-12 final-note-container">
+        <h5>Final note:</h5>
+        <p> Things to be cautious about:
+          <br>
+          <br>
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Import index.js file -->
+  <script src="js/index.js" charset="utf-8"></script>
+</body>
+
+</html>
