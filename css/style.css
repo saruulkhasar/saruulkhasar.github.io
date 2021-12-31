@@ -116,7 +116,12 @@ iframe {
   /* display: inline-block; */
   padding-right: 30px;
 }
+
 .turn-red {
   color: #8b0000;
+  font-weight: bold;
+}
+
+.active {
   font-weight: bold;
 }
