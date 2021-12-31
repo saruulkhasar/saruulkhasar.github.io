@@ -35,6 +35,7 @@ iframe {
 
 /******************* MAJOR CONTAINERS ******************/
 .title-container {
+  width: 30%;
   text-align: center;
 }
 .middle-container {
@@ -45,7 +46,9 @@ iframe {
   padding-right: 8%;
   margin-top: 16%
 }
-
+.navbar-container{
+  width: 30%
+}
 
 /******************* OTHER CONTAINERS ******************/
 .copyright-container {
@@ -98,10 +101,6 @@ iframe {
 }
 .img-books {
   width: 100%;
-}
-.menu-container {
-  text-align: center;
-  display: inline-block;
 }
 /******************* NAVs ******************/
 
