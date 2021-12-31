@@ -3,7 +3,7 @@
 body {
   background-color: #fafafa;
   font-family: serif;
-  font-family: 'Crimson Pro', sans-serif;
+  font-family: "Crimson Pro", sans-serif;
   color: #474747;
   margin: 5% 12%;
 }
@@ -12,7 +12,8 @@ h1 {
   font-size: 300%;
 }
 
-h5, h6 {
+h5,
+h6 {
   font-weight: bold;
 }
 
@@ -22,7 +23,7 @@ p {
 }
 
 div {
-    display: block;  /* div is styled as blocks w/ white space on top and bottom */
+  display: block; /* div is styled as blocks w/ white space on top and bottom */
 }
 ul {
   list-style-type: square;
@@ -32,9 +33,9 @@ iframe {
   height: 115%;
 }
 
-
 /******************* MAJOR CONTAINERS ******************/
 .title-container {
+  width: 30%;
   text-align: center;
 }
 .middle-container {
@@ -43,9 +44,11 @@ iframe {
 .bottom-container {
   padding-left: 5%;
   padding-right: 8%;
-  margin-top: 16%
+  margin-top: 16%;
 }
-
+.navbar-container {
+  width: 30%;
+}
 
 /******************* OTHER CONTAINERS ******************/
 .copyright-container {
@@ -63,17 +66,18 @@ iframe {
 }
 .vertical-line {
   margin-left: 5%;
-  border-left: 5px solid #e5a3a3;  /* This adds long vertical line on the left*/
+  border-left: 5px solid #e5a3a3; /* This adds long vertical line on the left*/
   max-width: 90%;
 }
-.project-text-container, .book-img-container {    /* setting distance from the vertical pink line */
+.project-text-container,
+.book-img-container {
+  /* setting distance from the vertical pink line */
   padding-left: 5%;
   padding-right: 3%;
 }
 .book-review {
   padding-bottom: 7%;
 }
-
 
 /******************* CONTENTS ******************/
 /* .my-intro {
@@ -99,10 +103,6 @@ iframe {
 .img-books {
   width: 100%;
 }
-.menu-container {
-  text-align: center;
-  display: inline-block;
-}
 /******************* NAVs ******************/
 
 .navbar {
@@ -111,7 +111,7 @@ iframe {
   padding-right: 25%;
 }
 
-.navbar-nav > li{
+.navbar-nav > li {
   /* padding-left: 5%; */
   /* display: inline-block; */
   padding-right: 30px;
@@ -124,4 +124,8 @@ iframe {
 
 .active {
   font-weight: bold;
+}
+
+.nav-item {
+  white-space: nowrap;
 }
