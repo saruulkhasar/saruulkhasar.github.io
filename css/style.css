@@ -35,7 +35,6 @@ iframe {
 
 /******************* MAJOR CONTAINERS ******************/
 .title-container {
-  width: 30%;
   text-align: center;
 }
 .middle-container {
@@ -45,9 +44,6 @@ iframe {
   padding-left: 5%;
   padding-right: 8%;
   margin-top: 16%;
-}
-.navbar-container {
-  width: 30%;
 }
 
 /******************* OTHER CONTAINERS ******************/
@@ -76,7 +72,7 @@ iframe {
   padding-right: 3%;
 }
 .book-review {
-  padding-bottom: 7%;
+  padding-bottom: 10%;
 }
 
 /******************* CONTENTS ******************/
@@ -107,8 +103,6 @@ iframe {
 
 .navbar {
   padding-top: 2%;
-  padding-left: 30%;
-  padding-right: 25%;
 }
 
 .navbar-nav > li {
