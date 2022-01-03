@@ -72,7 +72,7 @@ iframe {
   padding-right: 3%;
 }
 .book-review {
-  padding-bottom: 10%;
+  padding-bottom: 7%;
 }
 
 /******************* CONTENTS ******************/
@@ -103,20 +103,11 @@ iframe {
 
 .navbar {
   padding-top: 2%;
-}
-
-.navbar-nav > li {
-  /* padding-left: 5%; */
-  /* display: inline-block; */
-  padding-right: 30px;
+  justify-content: center; /* places navbar in the middle */
 }
 
 .turn-red {
   color: #8b0000;
-  font-weight: bold;
-}
-
-.active {
   font-weight: bold;
 }
 
