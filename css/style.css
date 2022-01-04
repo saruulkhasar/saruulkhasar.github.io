@@ -65,21 +65,24 @@ iframe {
   border-left: 5px solid #e5a3a3; /* This adds long vertical line on the left*/
   max-width: 90%;
 }
-.project-text-container,
+.project-text-container {
+  /* setting distance from the vertical pink line */
+  padding-left: 5%;
+  padding-right: 3%;
+}
+
+/******************* Book review page ******************/
+.img-books {
+  width: 100%;
+}
+.book-review {
+  padding-bottom: 100px;
+}
 .book-img-container {
   /* setting distance from the vertical pink line */
   padding-left: 5%;
   padding-right: 3%;
 }
-.book-review {
-  padding-bottom: 7%;
-}
-
-/******************* CONTENTS ******************/
-/* .my-intro {
-  padding-top: 10%;
-} */
-
 /******************* IMAGES ******************/
 
 .img-me {
@@ -96,9 +99,7 @@ iframe {
 .img-project-step {
   padding-bottom: 10%;
 }
-.img-books {
-  width: 100%;
-}
+
 /******************* NAVs ******************/
 
 .navbar {
