@@ -8,8 +8,32 @@
   <title>Saruul</title>
 
   <!-- Bootstrap stylesheets -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+  <!-- Slide show style -->
+  <style>
+    .mySlides {
+      display: none;
+    }
+
+    .w3-left,
+    .w3-right,
+    .w3-badge {
+      cursor: pointer;
+    }
+
+    .w3-badge {
+      height: 20px;
+      width: 20px;
+      margin-top: 250px;
+    }
+  </style>
 
   <!-- Connect to my stylesheet style.css -->
   <link rel="stylesheet" href="css/style.css" />
@@ -21,6 +45,10 @@
 
   <!-- Import jquery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <!-- Slideshow style -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
 
 </head>
 
@@ -39,56 +67,34 @@
       <!-- Project overview container -->
       <div class="col-lg-12 page-intro-container">
         <h5>Overview:</h5>
-        <p> I have read a couple of books on value investment recently. 
-          They led me to think that I need a comprehensive and systematic 
-          analysis framework to find promising companies. A book titled 
-          "The Warren Buffett Way" by Robert G. Hagstrom was a great starting 
-          point to dig deep into companies. So I have decided to take over 
-          this project to create a dashboard for key financial metrics measured 
-          from companies' financial statements. It's more accurate to compare 
-          companies among their peers. Therefore, I created separate dashboards 
+        <p> I have read a couple of books on value investment recently.
+          They led me to think that I need a comprehensive and systematic
+          analysis framework to find promising companies. A book titled
+          "The Warren Buffett Way" by Robert G. Hagstrom was a great starting
+          point to dig deep into companies. So I have decided to take over
+          this project to create a dashboard for key financial metrics measured
+          from companies' financial statements. It's more accurate to compare
+          companies among their peers. Therefore, I created separate dashboards
           for general merchandisers, tech companies, and biotech companies.
-          This project consists of two parts. First, I wrote some Python 
-          code to prepare the datasets, namely the key financial metrics. 
-          Then, I extracted the datasets into CSV files and created the dashboards. 
+          This project consists of two parts. First, I wrote some Python
+          code to prepare the datasets, namely the key financial metrics.
+          Then, I extracted the datasets into CSV files and created the dashboards.
           <br>
 
-          <div class="w3-content w3-display-container">
+        <div class="w3-content w3-display-container">
+          <img class="mySlides" src="images/dashboard/dashboard1.png" style="width:100%">
+          <img class="mySlides" src="images/dashboard/dashboard2.png" style="width:100%">
 
-            <div class="w3-display-container mySlides">
-              <img src="img_snowtops.jpg" style="width:100%">
-            </div>
-            
-            <div class="w3-display-container mySlides">
-              <img src="img_lights.jpg" style="width:100%">
-            </div>
-            
-            
-            <button class="w3-button w3-display-left w3-lightgrey" onclick="plusDivs(-1)">&#10094;</button>
-            <button class="w3-button w3-display-right w3-lightgrey" onclick="plusDivs(1)">&#10095;</button>
-            
-            </div>
-            
-            <script>
-            var slideIndex = 1;
-            showDivs(slideIndex);
-            
-            function plusDivs(n) {
-              showDivs(slideIndex += n);
-            }
-            
-            function showDivs(n) {
-              var i;
-              var x = document.getElementsByClassName("mySlides");
-              if (n > x.length) {slideIndex = 1}
-              if (n < 1) {slideIndex = x.length}
-              for (i = 0; i < x.length; i++) {
-                 x[i].style.display = "none";  
-              }
-              x[slideIndex-1].style.display = "block";  
-            }
-            </script>
-          <!-- <br>
+          <div class="w3-center w3-container w3-section w3-xxxlarge w3-text-gray w3-display-bottommiddle"
+            style="width:120%">
+            <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+            <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+            <span class="w3-badge demo w3-border w3-transparent w3-hover-gray" onclick="currentDiv(1)"></span>
+            <span class="w3-badge demo w3-border w3-transparent w3-hover-gray" onclick="currentDiv(2)"></span>
+          </div>
+        </div>
+
+        <!-- <br>
           <img class="col-lg-12 page-intro-container img-project" src="images/projects/dashboard1.png">
           <br> -->
         </p>
@@ -161,8 +167,15 @@
           <div class="col-lg-6 col-md-6 img-project-step">
             <img class="img-project" src="images/dashboard/dashboard1.png">
           </div>
+          <!-- Step 5 container -->
+          <div class="col-lg-6 col-md-6 project-text-container">
+            <h5>Step 4: Create a dashboard</h5>
+            <p>
+              ...
+            </p>
+          </div>
           <div class="col-lg-6 col-md-6 img-project-step">
-            <img class="img-project" src="images/dashboard/dashboard1.png">
+            <img class="img-project" src="images/dashboard/dashboard2.png">
           </div>
 
         </div>
@@ -185,5 +198,3 @@
 </body>
 
 </html>
-
-
