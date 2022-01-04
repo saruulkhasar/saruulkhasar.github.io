@@ -5,3 +5,8 @@ $(document).ready(function(){
   })
 })
 
+$(document).ready(function(){
+  $.get('slide_show.html').done(function(data){
+    $('.middle-container').html(data)
+  })
+})
