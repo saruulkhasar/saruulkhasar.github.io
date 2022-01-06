@@ -69,6 +69,12 @@ iframe {
   /* setting distance from the vertical pink line */
   padding-left: 5%;
   padding-right: 3%;
+  padding-bottom: 80px;
+}
+
+/******************* Book review page ******************/
+.img-books {
+  width: 100%;
 }
 
 /******************* Book review page ******************/
@@ -97,7 +103,7 @@ iframe {
   display: flex;
 }
 .img-project-step {
-  padding-bottom: 10%;
+  padding-bottom: 80px;
 }
 
 /******************* NAVs ******************/

@@ -80,10 +80,19 @@
           code to prepare the datasets, namely the key financial metrics.
           Then, I extracted the datasets into CSV files and created the dashboards.
           <br>
+          <h5>Tools and resources I used in this project:</h5>
+
+          <ul>
+            <li>Jupyter notebook</li>
+            <li>Tableau</li>
+            <li>Yahoo Finance</li>
+            <li>Fortune 500</li>
+          </ul>
 
         <div class="w3-content w3-display-container">
           <img class="mySlides" src="images/dashboard/dashboard1.png" style="width:100%">
           <img class="mySlides" src="images/dashboard/dashboard2.png" style="width:100%">
+          <img class="mySlides" src="images/dashboard/dashboard3.png" style="width:100%">
 
           <div class="w3-center w3-container w3-section w3-xxxlarge w3-text-gray w3-display-bottommiddle"
             style="width:120%">
@@ -99,14 +108,7 @@
           <br> -->
         </p>
 
-        <h5>Tools and sources used in this project:</h5>
 
-        <ul>
-          <li>Jupyter notebook</li>
-          <li>Tableau</li>
-          <li>Yahoo Finance</li>
-          <li>Fortune 500</li>
-        </ul>
 
       </div>
 
@@ -117,8 +119,8 @@
           <div class="col-lg-6 col-md-6 project-text-container">
             <h5>Step 1: Import financial statements data from Yahoo Finance</h5>
             <p>
-              I downloaded each company's balance sheet, income statement, cash flow statement,
-              and company valuations spreadsheets and imported them into jupyter notebook.
+              Imported all financial statements (balance sheet, income statement, cash flow statement)
+              into jupyter notebook and cleaned the datasets for analysis.
             </p>
           </div>
           <div class="col-lg-6 col-md-6 img-project-step">
@@ -126,31 +128,31 @@
           </div>
 
           <!-- Step 2 container -->
-          <div class="col-lg-6 col-md-6 project-text-container">
-            <h5>Step 2: Choose KPIs inspired</h5>
+          <div class="col-lg-12 col-md-12 project-text-container">
+            <h5>Step 2: Choose key metrics</h5>
             <p>
-              I chose 8 indicators to measure companies' profitability, sustainability, indebtedness,
-              and valuations (I'll explain the rationale later). <br>
-              1. Profit margin<br>
-              2. Owner earnings <br>
-              3. Short-term debt<br>
-              4. Current ratio<br>
-              5. Debt-to-equity<br>
-              6. Return-on-equity<br>
-              7. The one dollar premise<br>
-              8. PE ratio<br>
-
+              I chose 6 metrics to measure companies' profitability, sustainability, indebtedness,
+              and valuations. <br>
+              <br>
+              <b>1. Profit margin:</b> whether the company earns consistent profit and where it stands among the peers<br>
+              <b>2. Current-ratio:</b> whether the company's liquid assets covers short-terms obligations <br>
+              <b>3. Debt-to-equity:</b> whether the company is financed with debt more than equity <br>
+              <b>4. P/E ratio:</b> investors' evaluation with respect to the company's earnings <br>
+              <b>5. Return on equity:</b> whether the company is efficiently using it's equity <br>
+              <b>6. The one dollar premise:</b> whether the company is using the retained earnings efficiently <br>
             </p>
-          </div>
-          <div class="col-lg-6 col-md-6 img-project-step">
-            <img class="img-project" src="images/dashboard/2.png">
           </div>
 
           <!-- Step 3 container -->
           <div class="col-lg-6 col-md-6 project-text-container">
-            <h5>Step 3: Export the KPIs in Excel</h5>
+            <h5>Step 3: Export the metrics</h5>
             <p>
-              ...
+              I created two functions on Python. First, a function that imports the raw
+              dataset and clean them to prepare for analysis. Second, a function that 
+              calculates each indicator and export the outcome in comma separated file 
+              format that is ready for Tableau dashboard. Then I wrote a loop to create 
+              dataframe for all peer group indicators and created the dashboards. Creating 
+              the dashboard is pretty straightforward given that we prepared the datasets. 
             </p>
           </div>
           <div class="col-lg-6 col-md-6 img-project-step">
@@ -158,38 +160,39 @@
           </div>
 
           <!-- Step 4 container -->
-          <div class="col-lg-6 col-md-6 project-text-container">
-            <h5>Step 4: Create a dashboard</h5>
+          <div class="col-lg-12 col-md-12 project-text-container">
+            <h5>Conclusion: What do we get from the general merchandiser companies' dashboard? </h5>
             <p>
-              ...
+              1. In general Kohl's and Macy's have higher profit margin
+              among their peers, but it seems to have declined in 2021. 
+              Walmart and Target have pretty consistent profit margin around 25 to 30 percent.
+              Costco has the lowest profit margin. Having low profit margin increases 
+              the chances of risk to fail when there is certain economic shock happens. <br>
+              <br>
+              2. Kohl's has the best potential to pay-off their short-term 
+              obligations. Failing to pay short-term obligations also put the 
+              company in a risky position. <br>
+              <br>
+              3. Costco's most financing comes from equity. It is good. BJ's and Macy' 
+              have higher debt in comparison to their peers. This may put them in a position
+              where they have to waste lot of money on interest payments. <br>
+              <br>
+              4. Kohl's and Macy's p/e ratio information was not available for 2021. For other
+              players investors seem to be more willing to pay higher price for Costco
+              in comparison to its earnings per share. In other words, investors are more optimistic
+              about Costco (I would probably be a little hesitent considering how low their
+              profit margin is in comparison to its peers). <br>
+              <br>
+              5. Except for Kohl's and Macy's, most companies seem to be efficiently using the capital. <br>
+              <br>
+              6. The one-dollar-premise is a metrics I found from the Warren Buffett Way book. It 
+              basically says for every dollar of retained earnings, the company should bring more than $1 
+              value to its market capitalization in 5 years. <br>
             </p>
-          </div>
-          <div class="col-lg-6 col-md-6 img-project-step">
-            <img class="img-project" src="images/dashboard/dashboard1.png">
-          </div>
-          <!-- Step 5 container -->
-          <div class="col-lg-6 col-md-6 project-text-container">
-            <h5>Step 4: Create a dashboard</h5>
-            <p>
-              ...
-            </p>
-          </div>
-          <div class="col-lg-6 col-md-6 img-project-step">
-            <img class="img-project" src="images/dashboard/dashboard2.png">
           </div>
 
         </div>
       </div>
-
-      <!-- Final notes container -->
-      <div class="col-lg-12 final-note-container">
-        <h5>Final note:</h5>
-        <p> Things to be cautious about:
-          <br>
-          <br>
-        </p>
-      </div>
-
     </div>
   </div>
 
